@@ -1,6 +1,6 @@
 class TweetsController < ApplicationController
 	def index
-		@tweet = Tweet.all
+		@tweet = Tweet.all.order("id DESC")
 	end
 
 	def new
